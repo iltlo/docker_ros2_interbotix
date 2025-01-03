@@ -1,9 +1,6 @@
-# ROS 2 Humble Docker Setup
+# ROS2 Humble Docker Setup
 
-This repository contains the Docker setup for running ROS 2 Humble with [Interbotix workspace](https://docs.trossenrobotics.com/interbotix_xsarms_docs/ros_interface/ros2/software_setup.html). It includes the necessary Dockerfile and docker-compose.yml to build and run the environment with USB device support.
-
-
-
+This repository contains the Docker setup for running ROS 2 Humble with [Interbotix workspace](https://docs.trossenrobotics.com/interbotix_xsarms_docs/ros_interface/ros2/software_setup.html). It includes the necessary Dockerfile and docker-compose.yml to build and run the environment.
 
 ## Prerequisites
 - Docker
