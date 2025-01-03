@@ -1,0 +1,18 @@
+services:
+  ros2_humble:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: humble_container
+    environment:
+      - DISPLAY=docker.for.mac.host.internal:0
+      # - DISPLAY=${HOSTNAME}:0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./src:/root/interbotix_ws/src/robot_code  # Mount local src to the workspace
+      # - ./src:/root/interbotix_ws/src_local  # Mount local src to a temporary folder
+    stdin_open: true
+    tty: true
+    command: bash
+    # devices:
+    #   - "/dev/tty.usbmodem585A0085751:/dev/ttyUSB0"
